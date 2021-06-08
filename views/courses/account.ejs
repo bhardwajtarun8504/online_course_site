@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/account.css">
+    <title>User_setting</title>
+</head>
+<body>
+    <h2>User details</h2>
+    <div class="user_detail">
+        <img src="/img/user.png" alt="">
+        </div>
+        <p class="userinfo">username: </p>
+        <p class="userinfo">Email: </p>
+    <hr>
+    <p class="text_update">if you want to update your information then first enter correct Email and password. If email and Password are right only then your profile details will update!! 
+    </p>
+    <div class="container">
+        <form action="/user_account" method="post" class="form-format">
+        <p class="invalid"><%= text %></p>
+        <input class="form-type" type="email" name="email" placeholder="email">
+        <input class="form-type" type="text" name="password" placeholder="user password">
+        <input class="form-type" type="text" name="contact" placeholder="Contact number">
+        <textarea class="form-type" name="status" cols="30" rows="10" placeholder="text about you"></textarea>
+        <button class="btn" type="submit">Update profile</button>
+        </form>
+    </div>
+</body>
+</html>

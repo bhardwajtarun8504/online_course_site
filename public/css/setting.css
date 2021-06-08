@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(184, 176, 176);
+}
+/* .container{
+    width: 900px;
+    margin: 20px auto;
+    background-color: #fff;
+    height: 100vh;
+    padding: 20px;
+} */
+h3{
+    font-size: 25px;
+    padding-top: 20px;
+}
+input{
+    font-size: 18px;
+    padding: 4px;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+.text{
+    font-size: 22px;
+} 
+.text_delete{
+    font-size: 22px;
+    font-weight: bold;
+}
+.btn{
+    display: block;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: none;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid rgb(26, 37, 190);
+    color: rgb(26, 37, 190);
+    width: max-content;
+
+}
+.btn:hover{
+   background-color: rgb(52, 40, 219);
+   color: white;
+}
+
+.right{
+    margin-inline-start: 20%;
+}
+
+@media only screen and (max-width:581){
+    .username{
+        display: block;
+        margin: 10px;
+    }    
+}
+@media only screen and (max-width:581){
+
+}

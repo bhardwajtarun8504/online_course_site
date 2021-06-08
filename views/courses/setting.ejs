@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/setting.css">
+    <title>user_account</title>
+</head>
+<body>
+    <div class="container">
+        <h3>password</h3>
+        <form action="/password_update" method="post">
+            <input type="text" name="current_password" placeholder="Current password" required>
+            <input type="text" name="new_password" placeholder="new password" required>
+            <input type="text" name="retype_password" placeholder="Retype new password" required>
+            <button  class="btn">Change Password</button>
+            </form>
+        <hr>
+        <h3>Delete Account</h3>
+        <p class="text">If you delete your account, your personal information will be wiped from tEducation servers, all of your course activity will be anonymized and any certificates earned will be deleted. This action cannot be undone! Cancel any active subscriptions before you delete your.</p>
+        <p class="text_delete"> For delete account first fill correct email and password to confirm that it's your account!!</p>
+        <form action="/delete_account" method="post">
+            <input type="email" name="email" placeholder="user Email" required>
+            <input type="text" name="password" placeholder="password" required>
+        <button class="btn">Delete account</button>
+        </form>
+    </div>
+</body>
+</html>

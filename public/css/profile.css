@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(135, 140, 185);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% auto;
+}
+img{
+    width: 30%;
+    margin: auto;
+    margin-inline-start: 30%;
+}
+.username{
+    color: black;
+    padding: 20px 0px;
+    font-size: 30px;
+
+}
+.userinfo{
+    background-color: #fff;
+    display: inline;
+    padding: 4px 7px;
+}
+
+@media only screen and (max-width: 400px){
+    .userinfo{
+        display: block;
+    }
+    .username{
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width: 330px){
+    .username{
+        font-size: 18px;
+    }
+}

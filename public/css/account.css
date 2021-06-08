@@ -1,0 +1,57 @@
+body{
+    /* background: url('/img/contact.jpg'); */
+    background-color: rgb(150, 112, 112);
+}
+.container{
+    width: 40vw;
+    margin: auto;
+    background-color: white;
+    margin-top: 50px;
+}
+h2{
+    text-align: center;
+}
+.user_detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+img{
+    width: 80px;
+}
+.userinfo{
+    font-size: 25px;
+    background-color: rgb(156, 185, 204);
+    padding: 2px;
+    margin: 10px auto;
+    width: max-content;
+}
+.text_update{
+    font-size: 24px;
+    font-weight: bold;
+    width: 80%;
+    /* text-align: center; */
+    margin: auto;
+}
+.invalid{
+    color: red;
+    margin-inline-start: 3%;
+}
+.form-format{
+    display: flex;
+    flex-direction: column;
+}
+.form-type{
+    padding: 10px;
+    margin: 20px auto;
+    width: 85%;
+    border: 2px solid black;
+}
+.btn{
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(86, 88, 204);
+    margin: 20px auto;
+    width: 90%;
+}

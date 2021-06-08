@@ -1,0 +1,190 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    display: flex;
+    border: 1px solid rgb(77, 75, 75);
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+.burger{
+    display: none;
+    font-size: 20px;
+    margin: auto 5px;
+}
+.logoitem{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    left: 5px;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+.logotext{
+    font-size: 20px;
+    color: rgb(0, 47, 255);
+}
+.user{
+    display: flex;
+    align-items: center; 
+    /* justify-content: flex-end; */
+    position: absolute;
+    right: 0;
+    background-color: rgb(168, 166, 166);
+    height: 61px;
+}
+.textname{
+    font-size: 20px;
+    vertical-align: middle;
+    padding-left: 10px;
+    font-weight: 900;
+}
+
+.fa-sort-desc{
+   margin: 5px;
+   cursor: pointer;
+}
+.scrolldown{
+    position: fixed;
+    right: 0px;
+}
+.userinfo{
+    background-color: rgb(247, 243, 243);
+    width: 200px;
+}
+.userinfo li{
+    list-style: none;
+    padding: 1.5rem 3.6rem;
+}
+.userinfo li:hover{
+    background-color: rgb(121, 118, 118);
+}
+.userinfo li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+.profile{
+    padding: 10px;
+    display: none;
+    background-color: rgb(119, 120, 121);
+}
+.profile span{
+    font-size: 22px;
+    margin: auto;
+    vertical-align: middle;
+    font-weight: 900;
+}
+.v-class-resp{
+    display: none;
+}
+
+/* section of course */
+.container{
+    background-color: rgb(233, 230, 230);
+}
+.heading-course{
+    padding: 20px;
+}
+.heading-course h1{
+    font-size: 25px;
+    text-align: center;
+}
+.box{
+    border: 2px solid rgb(87, 88, 88);
+    width: 70%;
+    height: 200px;
+    margin: 20px auto;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.course-name{
+    width: 50%;
+    justify-content: flex-start;
+    background-color: #fff;
+}
+.course-name h3{
+    color: rgb(12, 89, 165);
+    font-size: 32px;
+    margin-inline-start: 10%;
+    background-color: #fff;
+}
+.btnbox{
+    width: 50%;
+    background-color: #fff;
+}
+.btn{
+    cursor: pointer;
+    background-color: rgb(59 120 181);
+    padding: 12px 0px;
+    font-size: 1.2rem;
+    margin-inline-start: 60%;
+    width: 33%;
+}
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+.welcome{
+    background-color: rgb(149, 160, 207);
+    height: 15vh; 
+}
+.welcome h1{
+    font-size: 35px;
+    text-align: center;
+    padding: 40px;
+}
+
+@media only screen and (max-width:500px){
+        .logoitem{
+            margin: 0px auto;
+        }
+        .user{
+            display: none;
+        }
+        .scrolldown{
+            left: 0;
+        }
+        .profile{
+            display: block;
+        }
+        .burger{
+            display: block;
+        }
+        .userinfo{
+            width: 54%;
+        }
+}
+
+@media only screen and (max-width:800px){
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.course-name{
+    width: 100%;
+}
+.course-name h3{
+    text-align: center;
+}
+.btnbox{
+    width: 100%;
+}
+.btn{
+    width: 55%;
+    margin-inline-start: 26%;
+}
+}
