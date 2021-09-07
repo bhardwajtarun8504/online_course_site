@@ -119,21 +119,10 @@ app.get('/register-course', (req, res) => {
 })
 
 
-<<<<<<< HEAD
 // user profile 
 app.get('/user_profile/:id', async (req, res) => {
     const user_data = await User.findById(req.params.id);
     // console.log(user_data);
-=======
-// app.post("/setting",async(req,res)=>{
-// //  const updateuser =await User.updateOne({email: req.user.email, password:req.body.password},{$set: {contact:req.body.contact , status:req.body.status}});
-// })
-
-app.get('/user_profile/:id', async (req, res) => {
-    console.log(req.params.id);
-    const user_data = await User.findById(req.params.id);
-    console.log(user_data);
->>>>>>> 7f3e24a7fabd29506d4502d5b82a9aa3cc519dab
     // console.log(req.user);
     res.render('courses/profile', {user_data: user_data});
 })
