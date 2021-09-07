@@ -3,37 +3,53 @@ body{
 }
 .container{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10% auto;
+}
+.userimage{
+    width: 50%;
+    float: left;
 }
 img{
     width: 30%;
-    margin: auto;
-    margin-inline-start: 30%;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+.data{
+    width: 50%;
+    float: right;
+    margin-top: 10%;
 }
 .username{
     color: black;
     padding: 20px 0px;
     font-size: 30px;
-
+}
+.userstatus{
+    background-color: #fff;
+    padding: 5px;
+    width: 80%;
+    font-size: 30px;
+    margin: 5px;
 }
 .userinfo{
     background-color: #fff;
     display: inline;
     padding: 4px 7px;
+    width: fit-content;
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 750px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    img{
+        width: 100px;
+    }
+    .userstatus{
+        width: 300px;
+    }
     .userinfo{
         display: block;
-    }
-    .username{
-        font-size: 24px;
-    }
-}
-@media only screen and (max-width: 330px){
-    .username{
-        font-size: 18px;
     }
 }

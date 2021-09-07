@@ -8,6 +8,14 @@ body{
     height: 100vh;
     padding: 20px;
 } */
+.updatetext{
+    color: red;
+}
+.form-format{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    width: 200px;
+}
 h3{
     font-size: 25px;
     padding-top: 20px;
@@ -46,12 +54,8 @@ input{
     margin-inline-start: 20%;
 }
 
-@media only screen and (max-width:581){
-    .username{
-        display: block;
-        margin: 10px;
-    }    
-}
-@media only screen and (max-width:581){
-
+@media only screen and (max-width:534px){
+    .form-format{
+    grid-template-columns: repeat(1, auto);
+    }
 }

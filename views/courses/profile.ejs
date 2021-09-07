@@ -10,12 +10,14 @@
 <body>
     <div class="container">
         <div class="userimage">
-                <img src="/img/user.png" alt="">
-            </div>
-            <div class="data">
-                <div class="username">Username:<p class="userinfo"></p</div>
-                <div class="username">Email:<p class="userinfo"></p</div>
-            </div>
+            <img src="/img/user.png" alt="user image">
+            <div class="userstatus"><%= user_data.status %></div>
+        </div>
+        <div class="data">
+            <div class="username">Username:<p class="userinfo"><%= user_data.username %></p></div>
+            <div class="username">Email:<p class="userinfo"><%= user_data.email %></p></div>
+            <div class="username">Contact number:<p class="userinfo"><%= user_data.contact %></p></div>
+        </div>
     </div>
 </body>
 </html>

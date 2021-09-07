@@ -215,7 +215,6 @@
     color: rgb(14,0,68);
     transform: translateY(0.7rem);
     opacity: 0;
-
 }
 
 .text-box{
@@ -240,7 +239,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgb(193, 223, 209);;
+    border: 2px solid rgb(193, 223, 209);
     border-radius: 10px;
     width: 50%;
     height: 35%;

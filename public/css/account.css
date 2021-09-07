@@ -3,7 +3,7 @@ body{
     background-color: rgb(150, 112, 112);
 }
 .container{
-    width: 40vw;
+    width: 40rem;
     margin: auto;
     background-color: white;
     margin-top: 50px;
@@ -54,4 +54,11 @@ img{
     background-color: rgb(86, 88, 204);
     margin: 20px auto;
     width: 90%;
+}
+
+@media only screen and (max-width: 670px){
+    .container{
+        width: 98vw;
+        margin: auto;
+    }
 }
