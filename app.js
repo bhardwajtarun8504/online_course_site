@@ -1,12 +1,25 @@
-
+const {MongoClient} = require('mongodb');
 const { name } = require("ejs");
-var express = require("express"),
-    mongoose = require("mongoose"),
-    bodyParser = require("body-parser"),
+const express = require("express");
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser"),
     User = require("./models/User");
 const port = 8000;
 
-mongoose.connect("mongodb://localhost/login_users", { useNewUrlParser: true , useUnifiedTopology: true, useCreateIndex: true});
+const DB = 'mongodb+srv://Tarunbhardwaj:%23Tarun8504@cluster0.emsoxbn.mongodb.net/online_course?retryWrites=true&w=majority'
+
+// mongoose.connect("mongodb://localhost/login_users", { useNewUrlParser: true , useUnifiedTopology: true, useCreateIndex: true});
+
+//connect with mongoDB
+mongoose.connect(DB, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,     //for resolve deprecation Warning
+    useCreateIndex: true,
+    useFindAndModify: false
+}).then(() => {
+    console.log(`connection successful`);
+}).catch((err) => console.log(`no connection`))
+
 var app = express();
 
 app.use(express.static(__dirname + '/public'));

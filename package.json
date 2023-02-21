@@ -1,7 +1,6 @@
 {
-  "name": "tEducation",
+  "name": "teducation",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,6 +13,21 @@
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
-    "mongoose": "^5.12.10"
-  }
+    "import-modules": "^3.1.0",
+    "mongodb": "^4.12.1",
+    "mongoose": "^5.12.10",
+    "nodemon": "^2.0.20",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^7.1.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhardwajtarun8504/online_course_site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bhardwajtarun8504/online_course_site/issues"
+  },
+  "homepage": "https://github.com/bhardwajtarun8504/online_course_site#readme",
+  "description": ""
 }
